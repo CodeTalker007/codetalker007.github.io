@@ -1,0 +1,117 @@
+{
+  "personal": {
+    "name": "Muhammad Afaq Umar",
+    "title": "Senior Backend Engineer",
+    "email": "afaqumarbsse@gmail.com",
+    "phone": "+92 303 0933078",
+    "location": "Remote",
+    "linkedin": "https://linkedin.com/in/muhammad-afaq-umar-537ab715a/",
+    "github": "https://github.com/CodeTalker007",
+    "summary": "Senior Backend Engineer with 6+ years of experience, specializing in payment-driven systems, scalable backend solutions, and API architecture.",
+    "aboutExtended": "I've worked with international clients to build high-scale platforms handling millions in transactions and thousands of active users, including platforms like Veva Collect and Prescription Hope. I thrive in solving complex backend problems and building systems that drive business impact.",
+    "aboutClosing": "When I'm not coding, I enjoy solving real-world challenges that push me to learn and apply the latest technologies.",
+    "techLove": "PHP, Laravel, Go, MySQL, AWS, Stripe, GraphQL, and building scalable, high-performance systems",
+    "headshot": "/Profile-Image.JPG"
+  },
+
+  "skills": {
+    "Backend & APIs": ["Laravel", "PHP", "REST APIs", "GraphQL", "API Authentication", "Webhooks"],
+    "Payments & Financials": ["Stripe", "USAePay", "Payroc", "PayPal", "N-Genius"],
+    "Cloud & Infrastructure": ["AWS S3", "EC2", "RDS", "SQS", "Lambda", "Load Balancers"],
+    "Databases": ["MySQL", "PostgreSQL", "MongoDB", "Redis"],
+    "Microservices & Async": ["Go Microservices", "Queues", "Cron Jobs", "Background Workers"],
+    "Frontend (Working Knowledge)": ["React", "Angular", "Vue", "Blade", "Bootstrap", "MJML"]
+  },
+
+  "experience": [
+    {
+      "company": "CodeTalker Innovations",
+      "role": "Senior Software Engineer (Freelance / Remote)",
+      "duration": "Nov 2023 – Present",
+      "projects": [
+        {
+          "name": "Prescription Hope",
+          "description": "Healthcare medication assistance platform serving 90K+ patients.",
+          "highlights": [
+            "Owned backend across employee and patient portals supporting $10M+ in monthly payments.",
+            "Integrated Stripe, USAePay, and Payroc for recurring billing.",
+            "Designed scalable database architecture with indexing and optimized queries.",
+            "Built 20+ cron jobs for billing, renewals, and automation."
+          ],
+          "tech": ["PHP", "Laravel", "CodeIgniter", "MySQL", "AWS", "Payments"],
+          "flagship": true,
+          "stats": {
+            "payments": "$10M+ monthly",
+            "users": "90K+ patients"
+          }
+        }
+      ]
+    },
+    {
+      "company": "Contrive Solutions",
+      "role": "Senior Software Engineer",
+      "duration": "Feb 2021 – Nov 2023",
+      "projects": [
+                {
+          "name": "Veva Collect",
+          "description": "High-scale music collaboration platform used by major labels and Grammy-winning producers.",
+          "highlights": [
+            "Led backend development handling ~5,000 file uploads per day with files up to 10GB.",
+            "Designed distributed file-processing pipeline using AWS S3, SQS, Lambda, Redis, and Go microservices.",
+            "Built async ZIP creation system to support 25GB+ multi-file shares without UX degradation.",
+            "Introduced load balancing to prevent outages during heavy concurrent collaboration."
+          ],
+          "tech": ["Laravel", "Go", "AWS", "S3", "SQS", "Lambda", "Redis", "GraphQL"],
+          "flagship": true,
+          "stats": {
+            "scale": "5,000+ daily uploads",
+            "fileSize": "Up to 10GB files"
+          }
+        },
+        {
+          "name": "Step2Compliance",
+          "highlights": [
+            "Built AWS Lambda + SQS workflows triggering Laravel webhooks.",
+            "Developed Python automation for XLSM generation and syncing."
+          ],
+          "tech": ["Laravel", "AWS Lambda", "SQS", "Python"]
+        },
+        {
+          "name": "RadioBridge",
+          "highlights": [
+            "Developed analytics dashboards for IoT LoRaWAN data.",
+            "Worked on backend integrations and data pipelines."
+          ],
+          "tech": ["Laravel", "IoT", "Analytics", "Data Pipelines"]
+        }
+      ]
+    },
+    {
+      "company": "DigiLynx",
+      "role": "Software Engineer",
+      "duration": "Jan 2020 – Feb 2021",
+      "highlights": [
+        "Integrated Stripe payments and appointment scheduling systems.",
+        "Built ERP modules and Twilio SMS/video features."
+      ],
+      "tech": ["Laravel", "Stripe", "Twilio", "ERP"]
+    },
+    {
+      "company": "Genetic Concepts",
+      "role": "Laravel Developer",
+      "duration": "Sep 2019 – Oct 2020",
+      "highlights": [
+        "Designed APIs for IoT systems.",
+        "Built ERP modules and led a small development team."
+      ],
+      "tech": ["Laravel", "REST APIs", "IoT", "MySQL"]
+    }
+  ],
+
+  "education": {
+    "degree": "Bachelor of Software Engineering",
+    "institution": "University of Gujrat",
+    "duration": "2015 – 2019",
+    "cgpa": "3.15 / 4.00"
+  }
+}
