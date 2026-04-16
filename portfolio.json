@@ -1,117 +1,269 @@
 {
   "personal": {
     "name": "Muhammad Afaq Umar",
-    "title": "Senior Backend Engineer",
+    "title": "Senior Full-Stack Engineer (Backend-Heavy)",
+    "headline": "I build the systems your startup can't outgrow",
+    "subheadline": "Full-Stack Engineer (Backend-Heavy) with 7+ years shipping payment platforms, distributed pipelines, and end-to-end products that handle real traffic — not toy projects.",
+    "proofLine": "$10M+/mo in payments · 90K+ users · 5K daily uploads · zero downtime",
     "email": "afaqumarbsse@gmail.com",
-    "phone": "+92 303 0933078",
-    "location": "Remote",
+    "location": "Remote or Relocation (US/EU)",
     "linkedin": "https://linkedin.com/in/muhammad-afaq-umar-537ab715a/",
     "github": "https://github.com/CodeTalker007",
-    "summary": "Senior Backend Engineer focused on payment systems, scalable backend architecture, and high-risk platforms where reliability and performance directly impact revenue.",
-    "aboutExtended": "I design, build, and own backend systems where failure is not an option — healthcare platforms, payment workflows, and large-scale file processing systems handling millions in transactions and thousands of daily users. I’ve led backend architecture for products like Prescription Hope and Veva Collect, taking full ownership from database design to cloud infrastructure.",
-    "aboutClosing": "I prefer working on complex problems involving scale, data integrity, and financial workflows, and I’m most effective in environments that value ownership, stability, and long-term system health.",
-    "techLove": "PHP, Laravel, Go, MySQL, AWS, Stripe, GraphQL, and building scalable, high-performance systems",
-    "headshot": "/Profile-Image.JPG"
+    "resumeUrl": "/MAF_CV_INT.pdf",
+    "calendlyUrl": "mailto:afaqumarbsse@gmail.com?subject=Let's%20Talk%20—%20Full-Stack%20Engineering"
   },
 
-  "skills": {
-    "Backend & APIs": ["Laravel", "PHP", "REST APIs", "GraphQL", "API Authentication", "Webhooks"],
-    "Payments & Financials": ["Stripe", "USAePay", "Payroc", "PayPal", "N-Genius"],
-    "Cloud & Infrastructure": ["AWS S3", "EC2", "RDS", "SQS", "Lambda", "Load Balancers", "Docker (containerized services)", "CI/CD pipelines (GitHub Actions)"],
-    "Databases": ["MySQL", "PostgreSQL", "MongoDB", "Redis"],
-    "Microservices & Async": ["Go Microservices", "Queues", "Cron Jobs", "Background Workers"],
-    "Frontend (Working Knowledge)": ["React", "Angular", "Vue", "Blade", "Bootstrap", "MJML"]
-  },
+  "valueProps": [
+    {
+      "title": "I've shipped at real scale",
+      "description": "90K+ users, $10M+ monthly payments, 5K daily uploads. Production systems with real money and real consequences.",
+      "icon": "scale"
+    },
+    {
+      "title": "I own the full stack, backend to deploy",
+      "description": "Database design, payment integrations, frontend, infrastructure, security. One senior engineer covering what most startups need a team for.",
+      "icon": "layers"
+    },
+    {
+      "title": "I make broken systems reliable",
+      "description": "Outages, supply-chain compromises, slow queries, payment failures — I've inherited bad backends and turned them into the most stable part of the stack.",
+      "icon": "shield"
+    },
+    {
+      "title": "I think in systems, not tickets",
+      "description": "Queue architectures, event-driven pipelines, cross-platform compute layers. I design for where you'll be in 2 years, not just today.",
+      "icon": "brain"
+    }
+  ],
+
+  "domains": [
+    "Healthcare · $10M+/mo",
+    "Music-Tech · Grammy Artists",
+    "Fintech · Multi-gateway",
+    "IoT · LoRaWAN",
+    "Enterprise · ERP & Compliance",
+    "Security · Supply Chain"
+  ],
+
+  "caseStudies": [
+    {
+      "id": "prescription-hope",
+      "title": "Prescription Hope",
+      "subtitle": "Healthcare payment platform processing $10M+/month for 90K+ patients",
+      "category": "Healthtech / Payments",
+      "featured": true,
+      "problem": "A healthcare platform serving 90K+ patients needed reliable multi-gateway recurring billing, complex renewal workflows, and a backend sustaining $10M+ monthly payment volume — with zero tolerance for downtime or data inconsistency across three different payment processors.",
+      "solution": "Owned the full backend across employee and patient portals. Built a unified payment abstraction layer over Stripe, USAePay, and Payroc with automated retry logic. Designed 20+ cron jobs for billing cycles, renewals, and failure recovery. Optimized the database layer with strategic indexing for sub-100ms query performance at scale.",
+      "architecture": [
+        "Laravel monolith serving dual portals (employee + patient)",
+        "Multi-gateway payment abstraction layer (Stripe, USAePay, Payroc)",
+        "Automated retry and reconciliation logic across processors",
+        "MySQL with strategic indexing and optimized query plans",
+        "20+ cron jobs for billing automation, renewals, retries",
+        "AWS infrastructure (EC2, RDS, S3)"
+      ],
+      "techStack": ["PHP", "Laravel", "CodeIgniter", "MySQL", "AWS", "Stripe", "USAePay", "Payroc"],
+      "metrics": [
+        { "label": "Monthly Payments", "value": "$10M+" },
+        { "label": "Active Patients", "value": "90K+" },
+        { "label": "Automated Cron Jobs", "value": "20+" },
+        { "label": "Payment Downtime", "value": "Zero" }
+      ],
+      "impact": "Made the billing engine the most reliable part of the stack — zero payment processing downtime, with automated retry logic handling edge cases across three different payment processors.",
+      "founderTakeaway": "If you're processing payments at scale, I've already solved this problem."
+    },
+    {
+      "id": "veva-collect",
+      "title": "Veva Collect",
+      "subtitle": "Distributed file pipeline handling 5K+ daily uploads for Grammy-winning producers",
+      "category": "Music-Tech / Distributed Systems",
+      "featured": true,
+      "problem": "A music collaboration platform used by major labels and Grammy-winning producers was failing under ~5,000 daily uploads (files up to 10GB), slow ZIP generation for 25GB+ multi-file shares, and outages during peak concurrent usage.",
+      "solution": "Designed a distributed file-processing pipeline using AWS S3, SQS, Lambda, Redis, and Go microservices. Built an async ZIP creation system handling 25GB+ payloads without blocking the UX. Introduced load balancing to eliminate outages during heavy collaboration sessions.",
+      "architecture": [
+        "Laravel API + Go microservices for file processing",
+        "AWS S3 with multipart uploads for large object storage",
+        "SQS + Lambda for async event-driven processing",
+        "Redis for caching and job state management",
+        "GraphQL API layer for flexible client queries",
+        "Load balancer for high-concurrency traffic distribution"
+      ],
+      "techStack": ["Laravel", "Go", "AWS S3", "SQS", "Lambda", "Redis", "GraphQL"],
+      "metrics": [
+        { "label": "Daily Uploads", "value": "5,000+" },
+        { "label": "Max File Size", "value": "10GB" },
+        { "label": "ZIP Payload", "value": "25GB+" },
+        { "label": "Outages After", "value": "Zero" }
+      ],
+      "impact": "Transformed an unreliable file-heavy platform into a robust event-driven system. Eliminated upload-related outages and made 25GB+ file sharing seamless for Grammy-winning producers and major label teams.",
+      "founderTakeaway": "If your app handles heavy file processing or needs event-driven architecture, I've done this at scale."
+    },
+    {
+      "id": "aldawli-erp",
+      "title": "Aldawli ERP",
+      "subtitle": "Supply-chain attack recovery on a live enterprise ERP — zero downtime",
+      "category": "Enterprise / Security",
+      "featured": true,
+      "problem": "A production ERP system handling enterprise inventory, procurement, and financials was silently compromised by a malicious third-party Composer dependency — containing obfuscated base64 payloads, eval() execution, hidden admin routes bypassing authentication, and data exfiltration behavior. The system appeared stable; the threat was invisible at the application layer.",
+      "solution": "Identified the supply-chain compromise during a dependency audit. Isolated the malicious package's execution paths without disrupting the live system. Conducted full dependency chain analysis, assessed system-wide exposure, cloned and manually sanitized the package, then revalidated every dependent module before redeployment — all within 30 hours, with zero downtime.",
+      "architecture": [
+        "Laravel-based ERP (inventory, procurement, financials)",
+        "Compromised dependency isolation and execution path severance",
+        "Full dependency chain analysis and exposure assessment",
+        "Manual package sanitization against known-good references",
+        "Module-by-module revalidation before production redeployment",
+        "Post-incident audit and access control hardening"
+      ],
+      "techStack": ["Laravel", "PHP", "MySQL", "Composer", "Security Analysis"],
+      "metrics": [
+        { "label": "Recovery Time", "value": "30 Hours" },
+        { "label": "System Downtime", "value": "Zero" },
+        { "label": "Modules Revalidated", "value": "100%" },
+        { "label": "Threat Type", "value": "Supply Chain" }
+      ],
+      "impact": "Restored a silently compromised production ERP to a fully verified secure state within 30 hours — no downtime, no data loss, and every execution path the malicious package touched was individually validated.",
+      "founderTakeaway": "If your production system has ever felt 'too stable to worry about,' it might be time for a dependency audit.",
+      "blogUrl": "https://medium.com/@afaqumarbsse/the-hidden-backdoor-how-a-single-composer-package-nearly-compromised-an-entire-erp-system-1efce1e74547"
+    },
+    {
+      "id": "step2compliance",
+      "title": "Step2Compliance",
+      "subtitle": "Cross-platform async pipeline for .xlsm generation — 65% faster delivery",
+      "category": "Enterprise / Distributed Systems",
+      "featured": false,
+      "problem": "A compliance platform required reliable generation of .xlsm (macro-enabled Excel) files — a format that cannot be natively produced in Linux environments. The existing synchronous approach blocked the UI and caused poor performance under load.",
+      "solution": "Designed an asynchronous, cross-platform pipeline: Laravel dispatches jobs to a queue, a Python service running on a dedicated Windows EC2 instance handles .xlsm generation, files land in S3, and webhook callbacks plus WebSocket notifications close the loop — keeping the main application fully responsive.",
+      "architecture": [
+        "Laravel backend with queue-based job dispatching",
+        "Windows EC2 instance for platform-specific .xlsm generation",
+        "Python service for file processing on the Windows compute layer",
+        "AWS S3 for file storage and delivery",
+        "Webhook-based completion callbacks to Laravel",
+        "WebSocket notifications for real-time client updates"
+      ],
+      "techStack": ["Laravel", "Python", "AWS EC2", "S3", "Queues", "WebSockets"],
+      "metrics": [
+        { "label": "Delivery Speed", "value": "+65%" },
+        { "label": "UI Blocking", "value": "Zero" },
+        { "label": "Processing", "value": "Fully Async" },
+        { "label": "Architecture", "value": "Cross-Platform" }
+      ],
+      "impact": "Eliminated UI blocking entirely and improved file delivery time by 65% — turning an unreliable synchronous process into a production-grade cross-platform pipeline.",
+      "founderTakeaway": "If you need platform-specific processing without compromising your main stack, I've built the decoupled architecture for it.",
+      "blogUrl": "https://medium.com/@afaqumarbsse/the-right-environment-for-the-right-problem-a-laravel-python-windows-ec2-architecture-case-study-c8076215f086"
+    },
+    {
+      "id": "radiobridge",
+      "title": "RadioBridge IoT Analytics",
+      "subtitle": "Real-time analytics dashboards over LoRaWAN sensor telemetry",
+      "category": "IoT / Data Engineering",
+      "featured": false,
+      "problem": "An IoT company collecting LoRaWAN sensor data had no real-time analytics or visualization — stakeholders had zero visibility into device performance and network health.",
+      "solution": "Built analytics dashboards for real-time IoT data visualization, backend integrations for ingesting LoRaWAN telemetry, and data pipelines transforming raw sensor data into actionable insights.",
+      "architecture": [
+        "Laravel backend for API and data processing",
+        "Real-time data ingestion from LoRaWAN devices",
+        "Analytics dashboard with time-series visualization",
+        "ETL pipeline for sensor data transformation"
+      ],
+      "techStack": ["Laravel", "IoT", "LoRaWAN", "Analytics", "MySQL", "Data Pipelines"],
+      "metrics": [
+        { "label": "Data Source", "value": "LoRaWAN" },
+        { "label": "Dashboards", "value": "Real-Time" },
+        { "label": "Pipeline", "value": "ETL" },
+        { "label": "Domain", "value": "IoT" }
+      ],
+      "impact": "Delivered the company's first real-time visibility into device performance and network health, enabling data-driven decisions on device uptime and network operations.",
+      "founderTakeaway": "If you need data pipelines and analytics dashboards built on real-time sensor data, I know this space."
+    }
+  ],
 
   "experience": [
     {
       "company": "CodeTalker Innovations",
-      "role": "Senior Software Engineer (Freelance / Remote)",
+      "role": "Senior Software Engineer",
+      "type": "Freelance / Remote",
       "duration": "Nov 2023 – Present",
-      "projects": [
-        {
-          "name": "Prescription Hope",
-          "description": "Primary backend owner across multiple client platforms, specializing in payments, scalability, and system reliability.",
-          "highlights": [
-            "Owned backend systems across employee and patient portals supporting $10M+ in monthly payments.",
-            "Designed and maintained recurring billing workflows using Stripe, USAePay, and Payroc.",
-            "Architected scalable database models with indexing and optimized queries for large patient datasets.",
-            "Implemented and maintained 20+ cron jobs handling billing, renewals, and operational automation."
-          ],
-          "tech": ["PHP", "Laravel", "CodeIgniter", "MySQL", "AWS", "Payments"],
-          "flagship": true,
-          "stats": {
-            "payments": "$10M+ monthly",
-            "users": "90K+ patients"
-          }
-        }
+      "current": true,
+      "achievements": [
+        "Own the entire backend for Prescription Hope — healthcare platform serving 90K+ patients with $10M+ monthly payment volume",
+        "Built unified payment abstraction over Stripe, USAePay, and Payroc with automated retries — zero billing downtime",
+        "Designed database architecture with strategic indexing — reduced average query latency to sub-100ms",
+        "Built 20+ cron jobs powering billing cycles, renewals, failure retries, and automated workflows",
+        "Identified and neutralized a supply-chain backdoor in a live enterprise ERP system within 30 hours, zero downtime"
       ]
     },
     {
       "company": "Contrive Solutions",
       "role": "Senior Software Engineer",
+      "type": "Full-time",
       "duration": "Feb 2021 – Nov 2023",
-      "projects": [
-                {
-          "name": "Veva Collect",
-          "description": "High-scale music collaboration platform used by major labels and Grammy-winning producers.",
-          "highlights": [
-            "Led backend development handling ~5,000 file uploads per day with files up to 10GB.",
-            "Designed distributed file-processing pipelines using AWS S3, SQS, Lambda, Redis, and Go microservices.",
-            "Built async ZIP creation system to support 25GB+ multi-file shares without UX degradation.",
-            "Introduced load balancing and backend optimizations to prevent outages during heavy concurrent collaboration."
-          ],
-          "tech": ["Laravel", "Go", "AWS", "S3", "SQS", "Lambda", "Redis", "GraphQL"],
-          "flagship": true,
-          "stats": {
-            "scale": "5,000+ daily uploads",
-            "fileSize": "Up to 10GB files"
-          }
-        },
-        {
-          "name": "Step2Compliance",
-          "highlights": [
-            "Built AWS Lambda + SQS workflows triggering Laravel webhooks.",
-            "Developed Python automation for XLSM generation and syncing."
-          ],
-          "tech": ["Laravel", "AWS Lambda", "SQS", "Python"]
-        },
-        {
-          "name": "RadioBridge",
-          "highlights": [
-            "Developed analytics dashboards for IoT LoRaWAN data.",
-            "Worked on backend integrations and data pipelines."
-          ],
-          "tech": ["Laravel", "IoT", "Analytics", "Data Pipelines"]
-        }
+      "current": false,
+      "achievements": [
+        "Led backend for Veva Collect — 5,000+ daily uploads (up to 10GB) for major labels and Grammy-winning producers",
+        "Architected distributed file pipeline: AWS S3 + SQS + Lambda + Redis + Go microservices",
+        "Built async ZIP creation supporting 25GB+ multi-file shares without UX degradation",
+        "Designed cross-platform async pipeline (Laravel + Python + Windows EC2) for Step2Compliance — 65% faster file delivery"
       ]
     },
     {
       "company": "DigiLynx",
       "role": "Software Engineer",
+      "type": "Full-time",
       "duration": "Jan 2020 – Feb 2021",
-      "highlights": [
-        "Integrated Stripe payments and appointment scheduling systems.",
-        "Built ERP modules and Twilio SMS/video features."
-      ],
-      "tech": ["Laravel", "Stripe", "Twilio", "ERP"]
+      "current": false,
+      "achievements": [
+        "Integrated Stripe payment flows and appointment scheduling for healthcare clients",
+        "Built ERP modules used daily by internal operations teams",
+        "Implemented Twilio SMS/video features for telehealth use cases"
+      ]
     },
     {
       "company": "Genetic Concepts",
       "role": "Laravel Developer",
+      "type": "Full-time",
       "duration": "Sep 2019 – Oct 2020",
-      "highlights": [
-        "Designed APIs for IoT systems.",
-        "Built ERP modules and led a small development team."
-      ],
-      "tech": ["Laravel", "REST APIs", "IoT", "MySQL"]
+      "current": false,
+      "achievements": [
+        "Designed RESTful APIs for IoT systems processing sensor data",
+        "Built ERP modules and led a small development team",
+        "Established API design conventions adopted company-wide"
+      ]
+    }
+  ],
+
+  "skills": {
+    "Backend & APIs": ["Laravel", "PHP", "CodeIgniter", "REST APIs", "GraphQL", "WebSockets", "Queues", "Cron Jobs"],
+    "Databases": ["MySQL", "PostgreSQL", "MongoDB", "SQLite", "Query Optimization", "Indexing", "Schema Design"],
+    "Frontend Development": ["React.js", "Angular", "Vue.js", "JavaScript (ES6+)", "HTML5", "CSS3", "Tailwind CSS"],
+    "Payments": ["Stripe", "PayPal", "USAePay (Card + ACH)", "Payroc", "N-Genius"],
+    "Cloud & DevOps": ["AWS EC2", "AWS S3", "AWS RDS", "AWS SQS", "AWS Lambda", "Docker", "Nginx", "Linux", "CI/CD"],
+    "Microservices & Scripts": ["Go", "Node.js", "Python"],
+    "Integrations": ["Twilio", "Zoom SDK", "Shopify API", "LoRaWAN/IoT", "WebSockets", "Tekmetrics API", "Zatca E-Invoicing"]
+  },
+
+  "blog": [
+    {
+      "title": "The Right Environment for the Right Problem",
+      "preview": "How I solved .xlsm generation by introducing a Windows compute layer instead of forcing unreliable Linux workarounds — architecture decisions that respect the problem.",
+      "url": "https://medium.com/@afaqumarbsse/the-right-environment-for-the-right-problem-a-laravel-python-windows-ec2-architecture-case-study-c8076215f086",
+      "date": "2026",
+      "tag": "System Design",
+      "caseStudyId": "step2compliance"
+    },
+    {
+      "title": "The Hidden Backdoor in a Composer Package",
+      "preview": "How I found and neutralized a supply-chain attack hidden inside a third-party dependency in a live enterprise ERP — obfuscated payloads, hidden admin routes, and 30 hours to full recovery.",
+      "url": "https://medium.com/@afaqumarbsse/the-hidden-backdoor-how-a-single-composer-package-nearly-compromised-an-entire-erp-system-1efce1e74547",
+      "date": "2026",
+      "tag": "Security",
+      "caseStudyId": "aldawli-erp"
     }
   ],
 
   "education": {
     "degree": "Bachelor of Software Engineering",
     "institution": "University of Gujrat",
-    "duration": "2015 – 2019",
-    "cgpa": "3.15 / 4.00"
+    "duration": "2015 – 2019"
   }
 }
